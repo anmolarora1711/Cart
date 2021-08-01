@@ -3,6 +3,7 @@ import React from "react";
 const Navbar = (props) => {
 	return (
 		<div style={styles.nav}>
+			<h1 style={styles.mainHeading}> My Cart</h1>
 			<div style={styles.cartIconContainer}>
 				<img
 					style={styles.cartIcon}
@@ -26,6 +27,11 @@ const styles = {
 		display: "flex",
 		justifyContent: "flex-end",
 		alignItems: "center",
+	},
+	mainHeading: {
+		fontFamily: "Arial",
+		position: "absolute",
+		left: 10,
 	},
 	cartIconContainer: {
 		position: "relative",
